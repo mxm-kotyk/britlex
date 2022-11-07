@@ -1,0 +1,120 @@
+/* Primary text color #8F95A5 */
+/* Secondary text color #263238 */
+/* About numbers color #2A3246 */
+/* Section headers text color #000000 */
+/* Pricing "per month" color #546269 */
+/* Background color #F5F5F5 */
+/* Logo secondary color #939393 */
+:root {
+    --text-primary: #8F95A5;
+    --text-secondary: #263238;
+    --logo-secondary: #939393;
+    --about-numbers: #2A3246;
+    --per-month: #546269;
+    --section-header: #000000;
+    --background: #F5F5F5;
+}
+
+body {
+    color: var(--text-primary);
+    background-color: var(--background);
+    font-family: Poppins, "Helvetica Neue", "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    font-style: normal;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* .title-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+} */
+
+/* .section-title {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    color: var(--text-secondary);
+} */
+
+.container {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 131px;
+    padding-left: 131px;
+}
+
+.section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ------------Header------------ */
+
+.header .container {
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.logo {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-right: 236px;
+    font-size: 36px;
+    line-height: calc(54 / 36);
+    display: flex;
+    align-items: center;
+    color: var(--logo-secondary);
+}
+
+.brit {
+    color: var(--section-header);
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 50px;
+    flex-basis: calc((100% - 50px * 4) / 5);
+}
+
+.header-nav-item {}
+
+.header-button {
+    width: 312px;
+    height: 70px;
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--section-header);
+}
