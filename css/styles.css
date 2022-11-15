@@ -3,7 +3,8 @@
 /* About numbers color #2A3246 */
 /* Section headers text color #000000 */
 /* Pricing "per month" color #546269 */
-/* Background color #F5F5F5 */
+/* Background color #FFFFFF */
+/* Background cards color #F5F5F5 */
 /* Logo secondary color #939393 */
 :root {
     --text-primary: #8F95A5;
@@ -12,7 +13,8 @@
     --about-numbers: #2A3246;
     --per-month: #546269;
     --section-header: #000000;
-    --background: #F5F5F5;
+    --background: #FFFFFF;
+    --backdround-cards: #F5F5F5;
 }
 
 body {
@@ -48,27 +50,19 @@ button {
     cursor: pointer;
 }
 
-/* .title-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-} */
-
-/* .section-title {
-    font-size: 36px;
-    line-height: calc(42 / 36);
-    text-align: center;
-    color: var(--text-secondary);
-} */
+.section-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: calc(72 / 48);
+    color: var(--section-header);
+}
 
 .container {
-    width: 1600px;
+    width: 1400px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 131px;
-    padding-left: 131px;
+    padding-right: 31px;
+    padding-left: 31px;
 }
 
 .section {
@@ -76,7 +70,7 @@ button {
     padding-bottom: 90px;
 }
 
-.img {
+img {
     display: block;
     width: 100%;
     height: auto;
@@ -138,3 +132,29 @@ button {
     color: var(--section-header);
     background-color: var(--background);
 }
+
+/* ------------Skills------------ */
+
+#skills h2 {
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skills-list-item {
+    padding: 32px 18px;
+    flex-basis: calc((100% - 60px) / 3);
+    background-color: var(--backdround-cards);
+}
+
+.skills-header {}
+
+.skills-text {}
+
+.upper {}
+
+.skills-link-button {}
