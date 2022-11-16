@@ -143,17 +143,34 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: flex-end;
 }
 
 .skills-list-item {
     padding: 32px 18px;
-    flex-basis: calc((100% - 60px) / 3);
     background-color: var(--backdround-cards);
 }
 
-.skills-header {}
+.skills-list-item:not(:last-child) {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.skills-list-item:first-child {
+    align-self: stretch;
+}
+
+.skills-list-item:last-child {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 
 .skills-text {}
+
+.skills-header {}
+
+.skills-paragraph {}
 
 .upper {}
 
