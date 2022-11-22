@@ -1,7 +1,7 @@
 /* Primary text color #8F95A5 */
 /* Secondary text color #263238 */
 /* About numbers color #2A3246 */
-/* Section headers text color #000000 */
+/* Section titles text color #000000 */
 /* Pricing "per month" color #546269 */
 /* Background color #FFFFFF */
 /* Background cards color #F5F5F5 */
@@ -12,9 +12,10 @@
     --logo-secondary: #939393;
     --about-numbers: #2A3246;
     --per-month: #546269;
-    --section-header: #000000;
+    --section-title: #000000;
     --background: #FFFFFF;
     --backdround-cards: #F5F5F5;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -54,7 +55,7 @@ button {
     font-weight: 600;
     font-size: 48px;
     line-height: calc(72 / 48);
-    color: var(--section-header);
+    color: var(--section-title);
 }
 
 .container {
@@ -98,14 +99,13 @@ img {
 }
 
 .brit {
-    color: var(--section-header);
+    color: var(--section-title);
 }
 
 .header-nav-list {
     display: flex;
     align-items: center;
     gap: 50px;
-    /* flex-basis: calc((100% - 50px * 4) / 5); */
 }
 
 .header-nav-link {
@@ -129,29 +129,103 @@ img {
     line-height: calc(30 / 20);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--section-header);
+    color: var(--section-title);
     background-color: var(--background);
 }
+
+/* ------------Hero------------ */
+
+.hero-section {
+    padding-top: 55px;
+}
+
+.hero-container {
+    display: flex;
+    gap: 144px;
+    align-items: flex-start;
+}
+
+.hero-title {
+    width: 386px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: calc(80 / 64);
+    color: var(--section-title);
+}
+
+.hero-text {
+    margin-bottom: 60px;
+    font-size: 24px;
+    line-height: calc(36 / 24);
+}
+
+.hero-button {
+    width: 426px;
+    height: 100px;
+    font-size: 36px;
+    line-height: calc(54 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--background);
+    background: var(--text-secondary);
+    border: 0 solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hero-img {}
 
 /* ------------Skills------------ */
 
 #skills h2 {
+    margin-bottom: 60px;
     text-align: center;
 }
 
 .skills-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 30px;
-    justify-content: flex-end;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "first second third"
+        "first fourth fourth";
 }
 
 .skills-list-item {
     padding: 32px 18px;
     background-color: var(--backdround-cards);
+    border-radius: 10px;
 }
 
-.skills-list-item:not(:last-child) {
+.skills-list-item:nth-of-type(1) {
+    grid-area: first;
+}
+
+.skills-list-item:nth-of-type(2) {
+    grid-area: second;
+}
+
+.skills-list-item:nth-of-type(3) {
+    grid-area: third;
+}
+
+.skills-list-item:nth-of-type(4) {
+    grid-area: fourth;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+
+}
+
+/* .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-end;
+} */
+
+/* .skills-list-item:not(:last-child) {
     flex-basis: calc((100% - 60px) / 3);
 }
 
@@ -163,15 +237,57 @@ img {
     align-self: stretch;
     display: flex;
     flex-direction: row-reverse;
-}
+} */
 
 
 .skills-text {}
 
-.skills-header {}
+.skills-title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: calc(45 / 30);
+    color: var(--text-secondary);
+}
 
-.skills-paragraph {}
+.skills-paragraph {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+}
 
-.upper {}
+.skills-link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 218px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(27 / 18);
+    color: var(--background);
+    background: var(--text-secondary);
+    border: 0 solid transparent;
+    border-radius: 10px;
+}
 
-.skills-link-button {}
+/* ------------About Us------------ */
+
+.section {}
+
+.section-title {}
+
+.about-text {
+    font-size: 20px;
+    line-height: calc(36 / 20);
+}
+
+.about-stats-list {}
+
+.about-stats-item {}
+
+.about-stats-number {}
+
+.about-stat {}
+
+.about-img {}
