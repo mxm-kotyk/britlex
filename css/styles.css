@@ -273,21 +273,61 @@ img {
 
 /* ------------About Us------------ */
 
-.section {}
+#about .container {
+    display: flex;
+    gap: 146px;
+}
+
+#about .section-title {
+    margin-bottom: 60px;
+}
+
+.about-paragraph {
+    font-size: 20px;
+    line-height: calc(36 / 20);
+    margin-bottom: 30px;
+}
+
+.about-stats-list {
+    margin-left: 49px;
+    display: flex;
+    gap: 131px;
+    width: 555px;
+}
+
+.about-stats-item {
+    max-width: 108px;
+}
+
+.about-stats-number {
+    margin-bottom: 6px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: calc(72 / 48);
+    color: var(--about-numbers);
+}
+
+.about-stat {
+    text-align: center;
+    font-size: 20px;
+    line-height: calc(30 / 20);
+}
+
+/* ------------Pricing------------ */
 
 .section-title {}
 
-.about-text {
-    font-size: 20px;
-    line-height: calc(36 / 20);
-}
+.pricing-list {}
 
-.about-stats-list {}
+.prising-item {}
 
-.about-stats-item {}
+.pricing-img {}
 
-.about-stats-number {}
+.pricing-item-title {}
 
-.about-stat {}
+.pricing-item-paragraph {}
 
-.about-img {}
+.pricing-price {}
+
+.pricing-period {}
