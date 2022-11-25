@@ -174,11 +174,9 @@ img {
     cursor: pointer;
 }
 
-.hero-img {}
-
 /* ------------Skills------------ */
 
-#skills h2 {
+#skills .section-title {
     margin-bottom: 60px;
     text-align: center;
 }
@@ -240,8 +238,6 @@ img {
 } */
 
 
-.skills-text {}
-
 .skills-title {
     margin-bottom: 20px;
     font-weight: 600;
@@ -278,7 +274,8 @@ img {
     gap: 146px;
 }
 
-#about .section-title {
+#about .section-title,
+#pricing .section-title {
     margin-bottom: 60px;
 }
 
@@ -316,11 +313,14 @@ img {
 
 /* ------------Pricing------------ */
 
-.section-title {}
+.pricing-list {
+    display: flex;
+    gap: 30px;
+}
 
-.pricing-list {}
-
-.prising-item {}
+.prising-item {
+    width: 426px;
+}
 
 .pricing-img {}
 
